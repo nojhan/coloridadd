@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/HTML; charset=utf-8"  />
+	<meta name=" robot" content="follow, index, all" />
+
+	<title>Coloridadd</title>
+
+<style>
+	
+h1, h2, h3, h4, h5, h6
+{
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	color: #f80;
+}
+
+h1
+{
+	padding-top: 20px;
+}
+
+a {
+	color:black;
+	font-weight:bold;
+}
+
+a:hover {
+	color:#f80;
+}
+
+</style>
+
+
+</head>
+
+<body>
+	
+	<h1 id="title">Coloridadd - generate SVG shapes representing colors</h1>
+
+	<p>Coloridadd is a script to generate SVG shapes representing colors, using the <a href="http://coloradd.net">ColorAdd code</a> developped by Miguel Neiva. The ColorAdd code is a monochromatic Graphical Code allowing colorblind to recognize colors.</p>
+
+	<p><a href="https://sourceforge.net/projects/coloridadd/files/">Download the latest version</a></p>
+
+	<img src="https://sourceforge.net/dbimage.php?id=248628" />
+
+	<h1>FAQ</h1>
+
+	<h2>Prerequisites</h2>
+	<p>You must install <a href="http://www.python.org">python</a>, which is available for almost every plateforms from which you would wish to generate SVG shapes.</p>
+
+	<h2>How to use this ø$%*µ§! script?</h2>
+	<p>Specify the pigments you want to encode as options to the script.</p>
+	<ul>
+		<li>Output the SVG representing the dark brown color on the standard ouput: <code>./coloridadd --red --blue --yellow --black</code></li>
+		<li>Output the shape encoding silver to the "silver.svg" file: <code>./coloridadd --grey --shine --output silver.svg</code></li>
+		<li>Show the help<code>./coloridadd --help</code>
+<pre>
+Usage: coloridadd [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -r, --red             add red pigment
+  -b, --blue            add blue pigment
+  -y, --yellow          add yellow pigment
+  -k, --black           add black pigment
+  -e, --grey            add grey pigment
+  -s, --shine           add the "shine" special pigment
+  -o FILE, --output=FILE
+                        write shape to FILE instead of standard output
+  -p FILE, --primitives=FILE
+                        use FILE as the SVG file containing primitives
+</pre>
+</code></li>
+	</ul>
+
+	<h2>How do I open the SVG?</h2>
+
+	<p>SVG (<a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">Scalable Vector Graphics</a>) is an XML file format for two-dimensional vector graphics. You can read SVG documents on a lot of softwares, among which most of the modern web-browsers. See the corresponding <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics#Support_for_SVG_in_web_browsers">support section on Wikipedia</a> for a list of available softwares.</p>
+	<p>Coloridadd SVG has been tested with <a href="http://www.inkscape.org">inkscape</a>, which is the recommended way of viewing the shapes and exporting them to other formats.</p>
+
+	<h2>Tell me more</h2>
+
+	<p>Coloridadd is released under the <a href="http://www.fsf.org/licensing/licenses/agpl-3.0.html">GNU Affero General Public License version 3</a>.</p>
+	<p>See the sourceforge <a href="https://sourceforge.net/projects/coloridadd">project page</a> if you want to participate or get more informations.</p>
+
+</body>
+
+</html>
